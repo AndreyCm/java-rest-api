@@ -35,5 +35,8 @@ public class ProductController {
     @PostConstruct
     private void init() {
         productRepository.save(new Product("Test", "Test description", 12.00f));
+        productRepository.save(new Product("Test2", "Test description 2", 22.00f));
+        productRepository.save(new Product("Test3", "Test description 3", 32.00f));
+        productRepository.save(new Product("Test4", "Test description 4", 42.00f));
     }
 }

@@ -13,14 +13,6 @@ import javax.persistence.Id;
 @Setter
 public class Product {
 
-    public Product(String name, String description, Float price) {
-        this.name = name;
-        this.description = description;
-        this.price = price;
-    }
-
-    public Product() {}
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -30,4 +22,12 @@ public class Product {
     private String description;
 
     private Float price;
+
+    public Product(String name, String description, Float price) {
+        this.name = name;
+        this.description = description;
+        this.price = price;
+    }
+
+    public Product() {}
 }
