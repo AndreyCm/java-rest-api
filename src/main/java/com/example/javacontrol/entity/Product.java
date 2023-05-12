@@ -1,5 +1,7 @@
 package com.example.javacontrol.entity;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -9,8 +11,10 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
+@Builder
 @Getter
 @Setter
+@AllArgsConstructor
 public class Product {
 
     @Id
